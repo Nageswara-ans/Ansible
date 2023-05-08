@@ -13,11 +13,10 @@
     
 
   - name: Copy file from S3 bucket
-    - s3:
+    s3:
       bucket: ansible-abc
       object: s3://ansible-abc/f1.txt
       dest: C:\Users\ENAGESWA\Downloads\Test_s3
       mode: get
-      aws_access_key: "AKIAR2PRKHAI4LL2HGNH"
-      aws_secret_key: "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"
+      
       
