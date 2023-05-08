@@ -14,7 +14,7 @@
     
 
   - name: Copy file from S3 bucket
-    s3:
+    amazon.aws.aws_s3:
       bucket: ansible-abc
       object: s3://ansible-abc/f1.txt
       dest: /root/test1
