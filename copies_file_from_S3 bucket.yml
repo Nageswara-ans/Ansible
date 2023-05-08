@@ -1,8 +1,8 @@
 ---
 - name: Copy file from S3 bucket
   hosts: all
-  become: root
-  gather_facts: no
+  become: yes
+  become_method: sudo
 
  
 
