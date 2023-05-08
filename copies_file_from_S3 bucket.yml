@@ -11,6 +11,9 @@
       pip:
         name: boto3
         state: present
+      pip:
+        name: botocore
+        state: present  
     
     - name: Copy file from S3 bucket
       amazon.aws.aws_s3:
