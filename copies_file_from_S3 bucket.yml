@@ -1,8 +1,9 @@
 ---
 - name: Copy file from S3 bucket
-  hosts: localhost
+  hosts: all
+  become: root
   gather_facts: no
-  connection: local
+
  
 
   tasks:
@@ -16,7 +17,7 @@
     s3:
       bucket: ansible-abc
       object: s3://ansible-abc/f1.txt
-      dest: C:\Users\ENAGESWA\Downloads\Test_s3
+      dest: /root/test1
       mode: get
       
       
