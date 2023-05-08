@@ -13,7 +13,7 @@
     
 
   - name: Copy file from S3 bucket
-    amazon.aws.s3.object:
+    - s3:
       bucket: ansible-abc
       object: s3://ansible-abc/f1.txt
       dest: C:\Users\ENAGESWA\Downloads\Test_s3
