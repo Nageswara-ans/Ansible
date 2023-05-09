@@ -1,0 +1,12 @@
+---
+- name: copy files from s3 to ec2
+  hosts: all
+  tasks:
+    - name: copy from s3 to ec2
+      s3:
+        aws_access_key: AKIAR2PRKHAI4LL2HGNH
+        aws_secret_key: qR6K/DWVaErVOR1yoifs4b/B5+neRMvx9ugmUpyP
+        bucket: ansible-abc
+        object: f1.txt
+        dest: .
+        mode: get
